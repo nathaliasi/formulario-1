@@ -10,7 +10,7 @@
   }
 
   .form-wrapper form{
-    width: 100%;
+    width: 80%;
   }
 
   .form-wrapper h2{
@@ -18,7 +18,7 @@
     font-size: 36px;
     text-align: center;
     color: #292929;
-    margin: 0 0 32px 0;
+    margin: 0 0 32px 30;
   }
 
 
@@ -40,8 +40,8 @@
 
   .form-col input{
     height: 36px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
+    border-radius: 25px;
+    border: 1px solid #000;
     outline: 0;
     padding: 0 12px;
     font-family: monospace;
@@ -53,34 +53,24 @@
     border-color: #c70039;
   }
 
-  .form-col textarea{
-    min-height: 64px;
-    padding: 12px;
-    max-width: calc(100% - 24px);
-    min-width: calc(100% - 24px);
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    outline: 0;
-    font-family: monospace;
-    font-size: 14px;
-    color: #000000;
-  }
+  .termos{
+    text-align: center;
+    margin-left: 225px;
+    }
 
-  .form-col textarea.invalid{
-    border-color: #c70039;
-  }
 
   .form-wrapper button{
     width: 100%;
     height: 48px;
     border: none;
-    background: #292929;
-    border-radius: 4px;
+    background: #03BFFE;
+    border-radius: 25px;
     cursor: pointer;
     font-family: monospace;
-    font-size: 14px;
+    font-size: 20px;
     text-transform: uppercase;
     color: #ffffff;
+    margin-top: 20px;
   }
 
   .form-wrapper button:hover{
