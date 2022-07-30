@@ -223,7 +223,7 @@ export const Theme = ({ children }: Props) => {
               <input type="checkbox" id="check4" />
               <label htmlFor="check4" id="icone4">
                 <h4>
-                  fale conosco <img src={Plus} className="plus" />
+                  Fale conosco <img src={Plus} className="plus" />
                 </h4>
               </label>
               <div className="barra4">

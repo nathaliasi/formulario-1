@@ -16,15 +16,20 @@ export const Container = styled.div`
   }
 }
 
-@media(min-width: 800px) and (max-width: 930px) {
-  *{
-    max-width: 1000px;
-    max-height: auto;
-  
+@media(min-width: 820px) and (max-width: 912px) {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 700px;
+
+  .topoWpp{
+     position: fixed;
+     top: 430px;
+     right: 200px;
   }
+
 }
 
-@media(min-width: 700px){
+@media(min-width: 800px){
   min-width: 100%;
   .bola{
     display: flex;
@@ -78,6 +83,32 @@ export const Container = styled.div`
     bottom: 60px;
   }
       
+}
+
+@media(max-width: 412px){
+  .topoWpp{
+    position: fixed;
+    left: 360px;
+    height: 300px;
+    bottom: 300px;
+  }
+}
+
+@media(max-width: 360px){
+  .topoWpp{
+    position: fixed;
+    left: 305px;
+    height: 300px;
+    bottom: 60px;
+  }
+}
+
+@media(max-width: 280px){
+  .topoWpp{
+    left: 240px;
+    height: 300px;
+    bottom: 60px;
+  }
 }
 `;
 
@@ -204,13 +235,30 @@ export const Section =  styled.div`
     
    }
 }
+
+@media(min-width: 820px) and (max-width: 912px) {
+  min-height: 180px;
+  width: 100%;
+
+  .inputlabel{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 150px;
+  }
+
+  .linha{
+    height: 200px;
+  }
+
+} 
 @media(min-width: 800px){
   .plus >img{
     display: none;
   }
   display: flex;
   margin-top: 100px;
-  margin-bottom: 100px
+  margin-bottom: 100px;
   width:100%;
   height: 130px;
   border-top: 1px solid #C4C4C4;
@@ -245,6 +293,7 @@ export const Section =  styled.div`
     margin-top: 100px;
     margin-bottom: 100px;
     width:100%;
+    max-width: 500px;
     height: 180px;
     border-top: 1px solid #C4C4C4;
     border-bottom: 1px solid #C4C4C4;
@@ -348,7 +397,9 @@ export const Footer1 =  styled.div`
     .dropDown3,
     .dropDown4{
       display: flex;     
-      margin-top: 0px;     
+      margin-top: 0px;
+      margin-left: 20px;
+      font-wheight: normal;     
     }
 
     #check2,
@@ -409,6 +460,7 @@ export const Footer1 =  styled.div`
           display: flex;
           margin-top: -200px;
           margin-bottom: 20px;
+          margin-left: 20px;
 
         }
 
@@ -447,6 +499,20 @@ export const Footer2 =  styled.div`
   }
   
 }
+
+@media(min-width: 820px) and (max-width: 912px){
+  .footer2{
+    margin-bottom: 800px;
+  }
+
+  .powred{
+   display: flex;
+   position: relative;
+   right: 170px;
+  }
+}
+
+
 @media(min-width: 800px){
     .footer-redes2{
       display: none;
@@ -500,6 +566,50 @@ export const Footer2 =  styled.div`
       display: flex;
       margin-left: auto;
       margin-right: auto;
+      margin-bottom: 280px;
+    }
+
+    
+
+    .txt2{
+      font-size: 0.9em;
+     color: #FFF;
+    }
+
+    .pagamentos2{
+      width: 100%;
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .powred2{
+     margin-bottom: 10px;
+    }
+    @media(max-width: 300px){
+
+      .pagamentos2{
+        display: flex;
+        margin-left: ;
+        margin-right: 30px;
+      }
+    }
+  }
+  @media(max-width: 375px){
+
+    .footer2{
+      display: none;
+    }
+    .footer2-mobile{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background: #585858;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 100px;
     }
 
@@ -531,4 +641,38 @@ export const Footer2 =  styled.div`
       }
     }
   }
+  @media(max-width: 412px){
+    .footer2-mobile{
+      margin-bottom: 400px;
+      
+    }
+  }
+
+  @media(max-width: 360px){
+    .footer2-mobile{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background: #585858;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 180px;
+    }
+    .pagamentos2 {
+      max-width: 250px;
+      margin-top: 20px;
+      margin-right: 200px;
+    }
+  }
+
+  @media(max-width: 280px){
+    .pagamentos2 {
+     display: none;
+    }
+    .footer2-mobile{
+      margin-bottom: 100px;
+    }
+  }
+
 `

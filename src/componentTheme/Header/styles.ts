@@ -2,11 +2,31 @@ import styled from "styled-components";
 
 
 export const Container = styled.div`
-@media(min-width: 800px) and (max-width: 930px){
+
+@media(min-width: 800px) and (max-width: 915px){
+
+  max-width: 950px;
+
+  .entrar{
+   display: flex;
+   position: relative;
+   right: 120px;
+  }
+
+  .carrinho{
+  display: flex;
+   position: relative;
+   right: 100px;
+  }
+  
+  
+}
+
+@media(max-width: 800px){
   width: 100%;
   
   .search{
-    display: none;
+    
   }
   input{
     display: none;
